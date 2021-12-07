@@ -2,6 +2,7 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Bottom from "./pages/Test/components/BottomAppBar";
+import Home from "./pages/Home/index";
 
 const App = (): JSX.Element => {
   return (
@@ -10,7 +11,8 @@ const App = (): JSX.Element => {
         <Toolbar></Toolbar>
       </AppBar>
       <Toolbar />
-      <h3>집에 가고싶다</h3>
+      <Home />
+      <Toolbar />
       <Bottom />
     </main>
   );
