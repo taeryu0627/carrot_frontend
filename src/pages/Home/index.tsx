@@ -5,6 +5,9 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import { Avatar, ListItemText } from "@mui/material";
+import { tradeItem } from "./data";
+import TradeInformation from "./TradeInformation";
+import TradeEvent from "./TradeEvent";
 
 const ImageTheme = {
   width: "150px",
@@ -13,82 +16,40 @@ const ImageTheme = {
 
 const Home = (): JSX.Element => {
   return (
-    <Box>
-      <List>
-        <ListItem>
-          <ListItemAvatar>
-            <Avatar />
-          </ListItemAvatar>
-          <ListItemText primary="제목글" secondary="hello" />
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemAvatar>
-            <Avatar
-              variant="rounded"
-              src="https://opgg-com-image.akamaized.net/attach/images/20191229091906.1045771.jpg"
-              sx={ImageTheme}
-            />
-          </ListItemAvatar>
-          <ListItemText primary="제목글" secondary="hello" />
-          <ListItemButton>peng</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>hihi</ListItemButton>
-        </ListItem>
-        <ListItem>
-          <ListItemButton>Go</ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
+    <>
+      <Box>
+        <List>
+          {tradeItem.map((item): JSX.Element => {
+            return (
+              <ListItem key={item.id}>
+                <ListItemButton>
+                  <ListItemAvatar>
+                    <Avatar
+                      variant="rounded"
+                      src={item.imageUrl}
+                      sx={ImageTheme}
+                    />
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary={
+                      <TradeInformation
+                        title={item.title}
+                        location={item.location}
+                        createdAt={item.createdAt}
+                        price={item.price}
+                      />
+                    }
+                    secondary={
+                      <TradeEvent chat={item.chat} interest={item.interest} />
+                    }
+                  />
+                </ListItemButton>
+              </ListItem>
+            );
+          })}
+        </List>
+      </Box>
+    </>
   );
 };
 

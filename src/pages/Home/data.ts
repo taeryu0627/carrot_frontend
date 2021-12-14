@@ -6,25 +6,29 @@ type TradeItem = {
   createdAt: Date;
   updatedAt?: Date;
   price: number;
+  interest?: number;
+  chat?: number;
 };
 
 export const tradeItem: TradeItem[] = [
   {
     id: "pengu",
     imageUrl:
-      "https://opgg-com-image.akamaized.net/attach/images/20191229091906.1045771.jpg",
-    title: "title1",
-    location: "location1",
+      "https://ssl.pstatic.net/imgshopping/cnsv/iu/home/21/1210/noz3el7qdnc.jpg",
+    title: "올반 꿔바로우",
+    location: "하남시",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
+    interest: 30,
+    chat: 53,
   },
   {
     id: "pingu",
     imageUrl:
-      "https://cdn-store.leagueoflegends.co.kr/images/v2/emotes/1506.png",
-    title: "title2",
-    location: "location2",
+      "https://ssl.pstatic.net/imgshopping/cnsv/iu/home/21/1210/noz3ekoqjd1.jpg",
+    title: "넬리 소다세제",
+    location: "상일동",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
@@ -32,39 +36,44 @@ export const tradeItem: TradeItem[] = [
   {
     id: "pongu",
     imageUrl:
-      "https://cdn-store.leagueoflegends.co.kr/images/v2/emotes/3137.png",
-    title: "title3",
-    location: "location3",
+      "https://ssl.pstatic.net/imgshopping/cnsv/iu/home/21/1210/noz3ennh9p8.jpg",
+    title: "해태 맛동산",
+    location: "둔촌동",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
+    interest: 95,
+    chat: 1,
   },
   {
     id: "pangu",
     imageUrl:
-      "https://upload3.inven.co.kr/upload/2021/03/22/bbs/i15973601571.jpg",
-    title: "title4",
-    location: "location4",
+      "https://ssl.pstatic.net/imgshopping/cnsv/iu/home/21/1209/noay2btnhsw.jpg",
+    title: "따뜻한 램스퍼",
+    location: "강동",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
+    interest: 42,
+    chat: 1,
   },
   {
     id: "penku",
     imageUrl:
-      "https://mblogthumb-phinf.pstatic.net/MjAyMDA3MDlfMjc5/MDAxNTk0Mjg0NTA0NjQ5.NzpaTjvUxTy2RNkb-WoY5Y5Niwc66u12dJCFAvssmVAg.AFb6Ydrle-TuJSjeGcoMcqnRJsK_pMlFYQJ4ge4bTA8g.PNG.alba83/2020-07-09_17;45;40.PNG?type=w800",
-    title: "title5",
-    location: "location5",
+      "https://ssl.pstatic.net/imgshopping/cnsv/iu/home/21/1209/noay2c3di6w.jpg",
+    title: "니트 원피스",
+    location: "천호동",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
+    interest: 30,
   },
   {
     id: "pinku",
     imageUrl:
-      "https://1.bp.blogspot.com/-Ol5QpwIhdok/XP_8fVy-0BI/AAAAAAABUeQ/D5BtuBuHER83bSPSIgPmnY1z0f8Y2R-UACLcBGAs/s1600/loot_penguknight_classic_tier1.png",
-    title: "title6",
-    location: "location6",
+      "https://ssl.pstatic.net/imgshopping/cnsv/iu/home/21/1209/noay2cbrd9a.jpg",
+    title: "사피아노 체인백",
+    location: "마천동",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
@@ -72,41 +81,47 @@ export const tradeItem: TradeItem[] = [
   {
     id: "ponku",
     imageUrl:
-      "https://static-cdn.jtvnw.net/jtv_user_pictures/642c243b-3b57-49fb-b321-99a322699c0d-profile_image-300x300.png",
-    title: "title7",
-    location: "location7",
+      "http://img.danawa.com/images/mobile/MDNW/mainContent/140/14076.jpg?ver=20211209182551&shrink=170:170",
+    title: "크리스마스 트리",
+    location: "용인시",
     createdAt: new Date(),
     updatedAt: new Date(),
     price: 10000,
+    interest: 600,
+    chat: 1,
   },
   {
     id: "panku",
     imageUrl:
-      "https://pbs.twimg.com/profile_images/1024394366775844864/vodIAX_r_400x400.jpg",
-    title: "title8",
-    location: "location8",
+      "http://img.danawa.com/images/mobile/MDNW/mainContent/140/14015.jpg?ver=20211207163428&shrink=170:170",
+    title: "롱패딩",
+    location: "여의도",
     createdAt: new Date(),
     updatedAt: new Date(),
-    price: 10000,
+    price: 260000,
+    interest: 30,
+    chat: 1,
   },
   {
     id: "punku",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINGMzmUwEt7u2aHptlSIKLeSGRQrEs_lJ_w&usqp=CAU",
-    title: "title9",
-    location: "location9",
+      "http://img.danawa.com/images/mobile/MDNW/mainContent/141/14143.jpg?ver=20211213164855&shrink=170:170",
+    title: "패딩부츠",
+    location: "김포시",
     createdAt: new Date(),
     updatedAt: new Date(),
-    price: 10000,
+    price: 20600,
   },
   {
     id: "pungu",
     imageUrl:
-      "https://opgg-com-image.akamaized.net/attach/images/20191229091906.1045771.jpg",
-    title: "title10",
-    location: "location10",
+      "http://img.danawa.com/images/mobile/MDNW/mainContent/141/14103.jpg?ver=20211210165015&shrink=170:170",
+    title: "킹왕짱든링",
+    location: "올림픽공원",
     createdAt: new Date(),
     updatedAt: new Date(),
-    price: 10000,
+    price: 61560,
+    interest: 990,
+    chat: 3,
   },
 ];
