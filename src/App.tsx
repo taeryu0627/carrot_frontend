@@ -3,6 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Bottom from "./pages/Test/components/BottomAppBar";
 import Home from "./pages/Home/index";
+import TradeDetail from "./pages/TradeDetail";
 
 const App = (): JSX.Element => {
   return (
@@ -11,9 +12,10 @@ const App = (): JSX.Element => {
         <Toolbar></Toolbar>
       </AppBar>
       <Toolbar />
-      <Home />
+      {/* <Home /> */}
+      <TradeDetail />
       <Toolbar />
-      <Bottom />
+      {/* <Bottom /> */}
     </main>
   );
 };
