@@ -1,19 +1,21 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Bottom from "./pages/Test/components/BottomAppBar";
-import Home from "./pages/Home/index";
-import TradeDetail from "./pages/TradeDetail";
+// import AppBar from "@mui/material/AppBar";
+// import Bottom from "./pages/Test/components/BottomAppBar";
+// import Home from "./pages/Home/index";
+// import TradeDetail from "./pages/TradeDetail";
+import Chat from "./pages/Chat";
 
 const App = (): JSX.Element => {
   return (
     <main>
-      <AppBar position="fixed">
+      {/* <AppBar position="fixed">
         <Toolbar></Toolbar>
-      </AppBar>
+      </AppBar> */}
       <Toolbar />
       {/* <Home /> */}
-      <TradeDetail />
+      {/* <TradeDetail /> */}
+      <Chat />
       <Toolbar />
       {/* <Bottom /> */}
     </main>
