@@ -8,6 +8,7 @@ import { Avatar, ListItemText } from "@mui/material";
 import { tradeItem } from "./data";
 import TradeInformation from "./TradeInformation";
 import TradeEvent from "./TradeEvent";
+import { useEffect } from "react";
 
 const ImageTheme = {
   width: "150px",
@@ -15,6 +16,9 @@ const ImageTheme = {
 };
 
 const Home = (): JSX.Element => {
+  useEffect(() => {
+    alert("HELLO");
+  }, []);
   return (
     <>
       <Box>
